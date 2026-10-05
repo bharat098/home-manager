@@ -7,7 +7,19 @@
     <meta name="theme-color" content="#007AFF" />
     <meta name="description" content="Home Manager — Manage household expenses, bills, and cook attendance" />
     <title>Home Manager</title>
-    <script type="module" crossorigin src="/home-manager/assets/index-Besz5_UX.js"></script>
+    <script>
+      // GitHub Pages SPA: restore redirected path
+      (function(l){
+        if(l.search[1]==='p'){
+          var decoded=l.search.slice(1).split('&').map(function(s){return s.replace(/~and~/g,'&')});
+          window.history.replaceState(null,null,
+            l.pathname.slice(0,-1)+(decoded[0].slice(1)||'/')+
+            (decoded[1]?'?'+decoded[1]:'')+l.hash
+          );
+        }
+      }(window.location));
+    </script>
+    <script type="module" crossorigin src="/home-manager/assets/index-D0SQhbTW.js"></script>
     <link rel="stylesheet" crossorigin href="/home-manager/assets/index-DAfmkxHU.css">
   </head>
   <body>
